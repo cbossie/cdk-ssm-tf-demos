@@ -5,6 +5,11 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table>
+        <tr><td><strong>Environment Name</strong></td><td>@Model.Config.EnvironmentName</td></tr>
+        <tr><td><strong>Administrator Group</strong></td><td>@Model.Config.AdministratorGroup</td></tr>
+        <tr><td><strong>Database Name</strong></td><td>@Model.Config.DatabaseName</td></tr>
+        <tr><td><strong>Database UserName</strong></td><td>@Model.Config.DatabaseUserName</td></tr>
+        <tr><td><strong>Email Suffix</strong></td><td>@Model.Config.Email</td></tr>        
+    </table>
 </div>
