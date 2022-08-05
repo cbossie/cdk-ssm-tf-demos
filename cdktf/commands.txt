@@ -1,0 +1,7 @@
+cdktf init --template="csharp"
+
+cdktf init --template="csharp"
+
+cdktf synth
+
+cdktf deploy
