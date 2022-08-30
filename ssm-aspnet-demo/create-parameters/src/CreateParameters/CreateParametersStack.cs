@@ -1,5 +1,6 @@
 using Amazon.CDK;
 using Amazon.CDK.AWS.SSM;
+using Amazon.CDK.AWS.SecretsManager;
 
 using Constructs;
 
@@ -36,6 +37,12 @@ namespace CreateParameters
             CreateStringParam(env, "db/databaseusername", "-db");
             CreateStringParam(env, "main/email", "@corporate.com");
 
+
+            new Secret(this, "testsecret",new SecretProps
+            {
+                SecretName = "testsecret",
+                SecretStringValue = new SecretValue("Hello from Virginia")
+            });
 
 
 
